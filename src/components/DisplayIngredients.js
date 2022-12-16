@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const DisplayIngredients = ({ recipe }) => {
   const { recipeId } = useParams();
@@ -13,9 +13,9 @@ const DisplayIngredients = ({ recipe }) => {
       <p>Ingredients</p>
       <ul>
         {ingredients.map((ingredients) => (
-          (<li key={ingredients.name}>
-            <Link to={ingredients.name}>{ingredients.name}: {ingredients.name}</Link>
-          </li>)
+          <li key={ingredients.name}>
+            {ingredients.name}: {ingredients.ammount}
+          </li>
         ))}
       </ul>
     </>
