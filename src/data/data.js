@@ -6,7 +6,8 @@ export const recipe = [
         ingredients: [
             {name: 'Tomato', ammount: '20g'},
             {name: 'for pizza', ammount: '5g'},
-            {name: 'for pizza', ammount: '5g'}
+            {name: 'for pizza', ammount: '5g'},
+            {name: 'ingredient', ammount: '5g'}
         ],
         category: 'Starter'
     },

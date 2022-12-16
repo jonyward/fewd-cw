@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Recipe from "./Recipe";
 
 function Search({ details }) {
-   const [searchField, setSearchField] = useState("");
-
-  const filtered = details.filter((entry) => {
-    return entry.name.toLowerCase().includes(searchField.toLowerCase());
+    const [searchField, setSearchField] = useState("");
+    
+    const filtered = details.filter((entry) => {
+    return entry.name.toLowerCase().includes(searchField.toLowerCase())
   });
 
   return (
