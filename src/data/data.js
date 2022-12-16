@@ -7,7 +7,8 @@ export const recipe = [
             {name: 'Tomato', ammount: '20g'},
             {name: 'for pizza', ammount: '5g'},
             {name: 'for pizza', ammount: '5g'}
-        ]
+        ],
+        category: 'Starter'
     },
     {
         id: '2',
@@ -16,7 +17,8 @@ export const recipe = [
         ingredients: [
             {name: 'for coffee', ammount: '20g'},
             {name: 'for coffee', ammount: '20g'}
-        ]
+        ],
+        category: 'Main'
     },
     {
         id: '3',
@@ -25,7 +27,8 @@ export const recipe = [
         ingredients: [
             {name: 'for carot cake', ammount: '20g'},
             {name: 'for carot cake', ammount: '20g'}
-        ]
+        ],
+        category: 'Main'
     },
     {
         id: '4',
@@ -34,6 +37,18 @@ export const recipe = [
         ingredients: [
             {name: 'idk', ammount: '20g'},
             {name: 'idk', ammount: '20g'}
-        ]
+        ],
+        category: 'Lunch'
+    },
+    {
+        id: '5',
+        name: 'Pizzzzza',
+        description: 'pizza with more zs to test search bar',
+        ingredients: [
+            {name: 'zzzzz', ammount: '20g'},
+            {name: 'izzzzzz', ammount: '20g'},
+            {name: 'SearchTest', ammount: '100000g'}
+        ],
+        category: 'Desert'
     }
 ]
