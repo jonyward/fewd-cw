@@ -4,10 +4,8 @@ export const recipe = [
         name: 'Pizza',
         description: 'Pepperoni Pizza',
         ingredients: [
-            {name: 'Tomato', ammount: '20g'},
-            {name: 'for pizza', ammount: '5g'},
-            {name: 'for pizza', ammount: '5g'},
-            {name: 'ingredient', ammount: '5g'}
+            'first ingredient, 100g',
+            'second ingredient, 200g'
         ],
         category: 'Starter'
     },
@@ -16,8 +14,8 @@ export const recipe = [
         name: 'Coffee',
         description: 'Coffee',
         ingredients: [
-            {name: 'for coffee', ammount: '20g'},
-            {name: 'for coffee', ammount: '20g'}
+            'third ingredient, 100g',
+            'fourth ingredient, 200g'
         ],
         category: 'Main'
     },
@@ -26,8 +24,8 @@ export const recipe = [
         name: 'carot cake',
         description: 'carot cake',
         ingredients: [
-            {name: 'for carot cake', ammount: '20g'},
-            {name: 'for carot cake', ammount: '20g'}
+            'fifth ingredient, 100g',
+            'sixth ingredient, 200g'
         ],
         category: 'Main'
     },
@@ -36,8 +34,8 @@ export const recipe = [
         name: 'idk',
         description: 'idk',
         ingredients: [
-            {name: 'idk', ammount: '20g'},
-            {name: 'idk', ammount: '20g'}
+            'seventh ingredient, 100g',
+            'eighth ingredient, 200g'
         ],
         category: 'Lunch'
     },
@@ -46,9 +44,8 @@ export const recipe = [
         name: 'Pizzzzza',
         description: 'pizza with more zs to test search bar',
         ingredients: [
-            {name: 'zzzzz', ammount: '20g'},
-            {name: 'izzzzzz', ammount: '20g'},
-            {name: 'SearchTest', ammount: '100000g'}
+            'ninth ingredient, 100g',
+            'tenth ingredient, 200g'
         ],
         category: 'Desert'
     }

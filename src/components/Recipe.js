@@ -5,6 +5,7 @@ const Recipe = ({ recipe }) => {
   return (
     <>
       <h2>Recipes</h2>
+      <button><Link to="/">Reset Recipes</Link></button>
       <ul>
         {recipe.map((recipe) => (
           <li key={recipe.id}>

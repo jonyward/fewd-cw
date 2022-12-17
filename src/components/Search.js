@@ -5,7 +5,7 @@ function Search({ details }) {
     const [searchField, setSearchField] = useState("");
     
     const filtered = details.filter((entry) => {
-    return entry.name.toLowerCase().includes(searchField.toLowerCase())
+    return entry.name.toLowerCase().includes(searchField.toLowerCase()) || entry.ingredients.toString().toLowerCase().includes(searchField.toLowerCase());
   });
 
   return (

@@ -14,7 +14,7 @@ const DisplayIngredients = ({ recipe }) => {
       <ul>
         {ingredients.map((ingredients) => (
           <li key={ingredients.id}>
-            {ingredients.name}: {ingredients.ammount}
+            {ingredients}
           </li>
         ))}
       </ul>
