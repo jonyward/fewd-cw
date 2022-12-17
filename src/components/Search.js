@@ -18,9 +18,9 @@ function Search({ details }) {
               onChange={(e) =>  setSearchField(e.target.value)}
             />
           </div>
+          <br></br>
           <Recipe recipe={filtered} />
       </div>
-  
   );
 }
 export default Search;

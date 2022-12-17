@@ -7,7 +7,10 @@ export const recipe = [
             'first ingredient, 100g',
             'second ingredient, 200g'
         ],
-        category: 'Starter'
+        category: 'Starter',
+        ingredientFilter: [
+            'Gluten Free'
+        ]
     },
     {
         id: '2',
@@ -17,7 +20,10 @@ export const recipe = [
             'third ingredient, 100g',
             'fourth ingredient, 200g'
         ],
-        category: 'Main'
+        category: 'Main',
+        ingredientFilter: [
+            'Gluten Free'
+        ]
     },
     {
         id: '3',
@@ -27,7 +33,10 @@ export const recipe = [
             'fifth ingredient, 100g',
             'sixth ingredient, 200g'
         ],
-        category: 'Main'
+        category: 'Main',
+        ingredientFilter: [
+            'Gluten Free'
+        ]
     },
     {
         id: '4',
@@ -37,7 +46,11 @@ export const recipe = [
             'seventh ingredient, 100g',
             'eighth ingredient, 200g'
         ],
-        category: 'Lunch'
+        category: 'Lunch',
+        ingredientFilter: [
+            'Gluten Free'
+        ]
+
     },
     {
         id: '5',
@@ -47,6 +60,9 @@ export const recipe = [
             'ninth ingredient, 100g',
             'tenth ingredient, 200g'
         ],
-        category: 'Desert'
+        category: 'Desert',
+        ingredientFilter: [
+            'Gluten Free'
+        ]
     }
 ]
