@@ -40,7 +40,7 @@ const DisplayRecipe = ({ recipe }) => {
 
       <ul>
         {ingredients.map((ingredients) => (
-          <li key={ingredients.id}>
+          <li key={ingredients.id} onClick={(e) => handleShoppingClick(e, ingredients)}>
             {ingredients}
           </li>
         ))}

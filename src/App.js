@@ -3,6 +3,7 @@ import DisplayRecipe from "./components/DisplayRecipe";
 import Navigation from "./components/Navigation";
 import Search from "./components/Search";
 import { recipe } from "./data/data";
+import NoPage from "./components/NoPage";
 
 function App() {
   return (  
@@ -13,6 +14,7 @@ function App() {
           <Route path=":recipeId" element={<DisplayRecipe recipe={recipe} />} />
         </Route>
       </Route>
+      <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>
   );

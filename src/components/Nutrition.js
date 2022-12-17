@@ -16,7 +16,7 @@ const Nutrition = ({ item }) => {
         <li>Potassium per serving:{item.potassium_mg}mg</li>
         <li>Cholesterol per serving:{item.cholesterol_mg}mg</li>
       </ul>
-      <br></br><br></br>
+      <br></br>
     </div>
   );
 };
