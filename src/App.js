@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Navigation />}>
-        <Route path="/recipes" element={<Search details={recipe} />}>
+        <Route path="/recipes/" element={<Search details={recipe} />}>
           <Route path=":recipeId" element={<DisplayRecipe recipe={recipe} />} />
         </Route>
       </Route>
