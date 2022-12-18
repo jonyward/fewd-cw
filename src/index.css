@@ -161,3 +161,20 @@ nav li a {
 .menuLIST {
   padding-bottom: 5px;
 }
+
+.homeheading {
+  padding-top: 200px;
+  align-items: center;
+  text-align: center;
+}
+
+.homesubheading {
+  padding-top: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.homeP {
+  align-items: center;
+  text-align: center;
+}
