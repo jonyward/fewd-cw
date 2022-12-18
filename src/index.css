@@ -23,7 +23,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #cececc;
+  background-color: #808080;
   
 }
 
@@ -35,7 +35,7 @@ nav li {
 
 nav li a {
   display: block;
-  color: black;
+  color: white;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -48,6 +48,9 @@ nav li a {
 .recipePage {
   margin-top: 100px;
   font-family: Arial, Helvetica, sans-serif;
+}
+.recipes {
+  position: absolute;
 }
 
 .submitP {
@@ -72,6 +75,10 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+.specificheader h2 {
+  padding-left: 53px;
 }
 
 .recipeList {
@@ -103,14 +110,41 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.details {
-
+.recipeList li a:hover {
+  color: white;
+  background-color: black;
+  border-radius: 15px;
 }
 
-.menu {
-
+.container {
+  text-align: center;
+  padding-top: 75px;
 }
 
 .shopping {
-  
+  float: right;
+  width: 23%;
+  padding-right: 2%;
+  word-wrap: break-word;
+}
+
+.details {
+  float: left;
+  width: 47%;
+  text-align: left;
+  padding-left: 3%;
+  word-wrap: break-word;
+}
+
+.menu {
+  display: inline-block;
+  width: 20%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  word-wrap: break-word;
+}
+
+.details li {
+  list-style: none;
+  padding-left: 0;
 }
