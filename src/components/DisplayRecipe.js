@@ -7,7 +7,7 @@ import ShoppingContext from "./ShoppingContext";
 import ShoppingList from "./ShopplingList";
 import StarComponent from "./StarComponent";
 
-//the comments ruined by application lol
+//the comments ruined by application lol honestly this is a joke
 
 const DisplayRecipe = ({ recipe }) => {
   const { recipeId } = useParams();
