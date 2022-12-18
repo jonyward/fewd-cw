@@ -4,6 +4,7 @@ import ShoppingContext from "./ShoppingContext";
 export default function ShoppingList() {
   const [order] = useContext(ShoppingContext);
   
+// component responsible for rendering shopping list component
 
   return (
     <div>

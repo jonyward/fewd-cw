@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import MenuContext from "./MenuContext";
 
+// component responsible for menu being shown
+
 export default function Menu() {
   const [order] = useContext(MenuContext);
 

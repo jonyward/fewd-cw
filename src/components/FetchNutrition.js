@@ -2,6 +2,9 @@ import React, { useEffect, useState, useCallback } from "react";
 import Nutrition from "./Nutrition";
 import FetchCharts from "./FetchCharts";
 
+  // component responsbile for setting up a data structure to hold nutritional values, and then querying an external api and using this data from the api
+  // to render a component which puts this data into a form that can be rendered with other components
+
 const FetchData = ({ query }) => {
   const [nutrition, setNutrition] = useState({
     sugar_g: 0,

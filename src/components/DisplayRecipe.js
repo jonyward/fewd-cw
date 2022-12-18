@@ -7,7 +7,8 @@ import ShoppingContext from "./ShoppingContext";
 import ShoppingList from "./ShopplingList";
 import StarComponent from "./StarComponent";
 
-//the comments ruined by application lol honestly this is a joke
+//DisplayRecipe component is responsible for rendering all the main details of each recipe, including the name, description, catagory, 
+// nutritional values and handles information being sent fro recipes into the menu and shopping list
 
 const DisplayRecipe = ({ recipe }) => {
   const { recipeId } = useParams();
@@ -17,6 +18,8 @@ const DisplayRecipe = ({ recipe }) => {
 
   const [selectedMenuItems, setSelectedMenuItems] = useState([]);
   const [selectedShoppingItems, setSelectedShoppingItems] = useState([]);
+
+  //both functions which handle ain fuctionality for menu and shopping list
 
   const handleMenuClick = (e, selectedName, selectedDescription, selectedCategory, selectedNothing) => {
     let newState = [...selectedMenuItems, selectedName, selectedDescription, selectedCategory, selectedNothing];
@@ -32,6 +35,9 @@ const DisplayRecipe = ({ recipe }) => {
 
   const { name, category, description, steps, nothing} = currentItem[0];
   const ingredients = currentItem[0].ingredients;
+
+  // Main html returned at the end of the component. 
+  // Starts by rendering the recipe details and at the end renders nutritional data as well as the menu and shopping list
 
   return (
     <>

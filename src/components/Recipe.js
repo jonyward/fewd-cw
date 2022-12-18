@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
+// component responsibe for showing all recipes that are being held in the data.js file
+
 const Recipe = ({ recipe }) => {
 
   return (

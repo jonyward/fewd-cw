@@ -1,5 +1,7 @@
 import React from "react";
 
+// Home page component, simple greetings message as this is the root destinatio of the application, and the first thing the user sees
+
 const Home = () => {
     return (
         <>

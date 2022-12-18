@@ -1,5 +1,7 @@
 import React from "react";
 
+// component where data from the FetchNutrition component goes
+
 const Nutrition = ({ item }) => {
   return (
     <div>

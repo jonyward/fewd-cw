@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
+// component responsible for the applications navigation bar
+
 const Navigation = () => {
   return (
     <>

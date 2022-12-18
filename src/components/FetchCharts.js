@@ -5,6 +5,8 @@ import { Pie } from "react-chartjs-2";
 
 const FetchCharts = ({ data }) => {
   
+  // Component responsible for rendering bar chart and pie chart which visualise nutritional data queried from an external API
+
   return (<>
     <Bar
       data={data}
