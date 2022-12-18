@@ -3,9 +3,10 @@ import ShoppingContext from "./ShoppingContext";
 
 export default function ShoppingList() {
   const [order] = useContext(ShoppingContext);
+  
 
   return (
-    <div>
+    <div class="shopping">
       <h2>Shopping List</h2>
       <ul>
         {order.map((item, index) => (

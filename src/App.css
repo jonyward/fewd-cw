@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+input[type="radio"] {
+  display:none;
+}
+
+.star{
+  cursor: pointer;
+  transition: color 200ms;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

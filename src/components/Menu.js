@@ -5,7 +5,7 @@ export default function Menu() {
   const [order] = useContext(MenuContext);
 
   return (
-    <div>
+    <div class="menu">
       <h2>Menu</h2>
       <ul>
         {order.map((item, index) => (

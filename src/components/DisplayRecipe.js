@@ -5,6 +5,7 @@ import MenuContext from "./MenuContext";
 import Menu from "./Menu";
 import ShoppingContext from "./ShoppingContext";
 import ShoppingList from "./ShopplingList";
+import StarComponent from "./StarComponent";
 
 const DisplayRecipe = ({ recipe }) => {
   const { recipeId } = useParams();
@@ -32,12 +33,13 @@ const DisplayRecipe = ({ recipe }) => {
 
   return (
     <>
-
+    <div class="details">
       <h4>Recipe Name: {name}</h4>
       <p>{description}</p>
 
       <button onClick={(e) => handleMenuClick(e, name)}>Add to Menu</button>
 
+      <p>Recipe Ingredients: </p>
       <ul>
         {ingredients.map((ingredients) => (
           <li key={ingredients.id} onClick={(e) => handleShoppingClick(e, ingredients)}>
@@ -45,13 +47,13 @@ const DisplayRecipe = ({ recipe }) => {
           </li>
         ))}
       </ul>
-
+      <p>Nutritional information</p>
       <FetchNutrition query={name} />
-
+      <StarComponent />
+    </div>
       <MenuContext.Provider value={[selectedMenuItems, setSelectedMenuItems]}>
         <Menu />
       </MenuContext.Provider>
-
       <ShoppingContext.Provider value={[selectedShoppingItems, setSelectedShoppingItems]}>
         <ShoppingList />
       </ShoppingContext.Provider>

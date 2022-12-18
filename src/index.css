@@ -11,3 +11,106 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #cececc;
+  
+}
+
+nav li {
+  display: inline-block;
+  margin: 0.5%;
+  font-size: large;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.recipePage {
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.submitP {
+  text-align: center;
+}
+
+.form-control {
+  width: 40%;
+  margin: auto;
+  display: block;
+  line-height: 1.5;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recipeList {
+  display: inline;
+  width: 100%;
+}
+
+.recipeList  li {
+  display: block;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+}
+
+.recipeList li a {
+  display: block;
+  color: black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.details {
+
+}
+
+.menu {
+
+}
+
+.shopping {
+  
+}

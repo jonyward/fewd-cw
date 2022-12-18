@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import Search from "./components/Search";
 import { recipe } from "./data/data";
 import NoPage from "./components/NoPage";
+import "./App.css";
 
 function App() {
   return (  
