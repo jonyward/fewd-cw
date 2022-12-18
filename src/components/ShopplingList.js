@@ -5,6 +5,7 @@ export default function ShoppingList() {
   const [order] = useContext(ShoppingContext);
   
 
+  // component responsible for rendering shopping list taking [Order] from previous logic to add a specific ingredient of the chosen recipe to the shopping list
   return (
     <div>
       <h2>Shopping List</h2>

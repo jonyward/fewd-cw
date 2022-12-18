@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
+// Nav bar responsible for navigating all routes of the application
 const Navigation = () => {
   return (
     <>

@@ -7,6 +7,8 @@ import ShoppingContext from "./ShoppingContext";
 import ShoppingList from "./ShopplingList";
 import StarComponent from "./StarComponent";
 
+//component which is loaded when parts of the recipe component are interacted with
+//this file is responsible for loading all information form the data.js file and loads information based on what recipe has been chosem
 const DisplayRecipe = ({ recipe }) => {
   const { recipeId } = useParams();
   const currentItem = recipe.filter((entry) => {
@@ -16,6 +18,8 @@ const DisplayRecipe = ({ recipe }) => {
   const [selectedMenuItems, setSelectedMenuItems] = useState([]);
   const [selectedShoppingItems, setSelectedShoppingItems] = useState([]);
 
+
+  // two functions to handle functionality responsibel for adding data to the menu and shoppling list elements of the application
   const handleMenuClick = (e, selectedName, selectedDescription, selectedCategory, selectedNothing) => {
     let newState = [...selectedMenuItems, selectedName, selectedDescription, selectedCategory, selectedNothing];
     setSelectedMenuItems(newState);
@@ -31,6 +35,8 @@ const DisplayRecipe = ({ recipe }) => {
   const { name, category, description, steps, nothing} = currentItem[0];
   const ingredients = currentItem[0].ingredients;
 
+
+  //htnl responsible for showing full recipe details
   return (
     <>
     <div class="container">

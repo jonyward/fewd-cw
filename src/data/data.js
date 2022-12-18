@@ -22,6 +22,7 @@ export const recipe = [
             '1 Chopped Onion',
             '2 Cloves of Garlic sliced thinly'
         ],
+        allergens: 'Gluten',
         nothing: ''
     },
     {
@@ -41,6 +42,7 @@ export const recipe = [
             '30g grated Parmigiano-Reggiano, plus extra shaved to serve',
             '4 Little Gem lettuces, leaves separated and chilled'
         ],
+        allergens: 'Gluten, Dairy',
         nothing: ''
     },
     {
@@ -76,6 +78,7 @@ export const recipe = [
             '100g plain flour',
             'good grating of nutmeg'
         ],
+        allergens: 'Gluten, Dairy',
         nothing: ''
     },
     {
@@ -91,6 +94,7 @@ export const recipe = [
             '1 tbsp vegetable oil',
             '4 burger buns'
         ],
+        allergens: 'Dairy',
         nothing: ''
     },
     {
@@ -110,6 +114,7 @@ export const recipe = [
             '4 tbsp single cream',
             'flat-leaf parsley'
         ],
+        allergens: 'Gluten, Dairy',
         nothing: ''
     },
     {
@@ -131,6 +136,7 @@ export const recipe = [
             '3 rosemary sprigs, leaves picked and chopped',
             '70ml double cream'
         ],
+        allergens: 'Dairy',
         nothing: ''
     },
     {
@@ -151,6 +157,7 @@ export const recipe = [
             '1 tsp ground cinnamon',
             '½ tsp grated nutmeg'
         ],
+        allergens: 'Dairy',
         nothing: ''
     },
     {
@@ -170,6 +177,7 @@ export const recipe = [
             '125ml/4½fl oz vegetable oil',
             '2 tsp vanilla extract'
         ],
+        allergens: 'Dairy',
         nothing: ''
     },
     {
@@ -188,6 +196,7 @@ export const recipe = [
             '400g punnet of strawberries',
             '25g icing sugar'
         ],
+        allergens: 'Dairy',
         nothing: ''
     },
     

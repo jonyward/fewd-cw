@@ -1,5 +1,6 @@
 import React from "react";
 
+// component responsible for rendering nutritional values in html form filling in {{item}} with information fetched from an external api in FetchNutrition component
 const Nutrition = ({ item }) => {
   return (
     <div>

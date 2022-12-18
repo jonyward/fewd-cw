@@ -7,6 +7,8 @@ import NoPage from "./components/NoPage";
 import "./App.css";
 import Home from "./components/Home";
 
+
+//app.js file which initialises routes for the application and decidedes what component is rendered depending on what route has been chosen
 function App() {
   return (  
     <BrowserRouter>

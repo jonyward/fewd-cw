@@ -2,6 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import Nutrition from "./Nutrition";
 import FetchCharts from "./FetchCharts";
 
+// component responsible for querying the api for nutritoinal values which are used in the DisplayRecipe compoent.
 const FetchData = ({ query }) => {
   const [nutrition, setNutrition] = useState({
     sugar_g: 0,
@@ -30,6 +31,7 @@ const FetchData = ({ query }) => {
 
   });
 
+  //callback function to fetch information from the api
   const fetchData = useCallback(() => {
     const url =
       "https://calorieninjas.p.rapidapi.com/v1/nutrition?query=" + query;
@@ -85,6 +87,8 @@ const FetchData = ({ query }) => {
     fetchData();
   }, [fetchData, query]);
 
+  // components are rendered using items and data from the previous code to render the nutritional values in a list
+  // to be rendered in the displayRecipe component. 
   return (
     <div>
       <Nutrition item={nutrition} />

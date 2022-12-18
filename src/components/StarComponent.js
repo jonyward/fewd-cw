@@ -4,6 +4,9 @@ import { FaStar} from "react-icons/fa";
 const StarComponent = () => {
     const [rating, setRating] = useState(null);
 
+    // Test component for rating system for each recipe.
+    // was optimistic this would work but decided to keep in application to demonstrate at least an attempt at some sort of rating for each recipe.
+    // component does work however stays in the same state across all recipes, where it should have an individual state for each individual recipe that is saved.
     return (
     <div>
         {[...Array(5)].map((star, i) => {

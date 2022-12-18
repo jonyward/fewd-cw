@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 
+// component responsbile for rendering the list of recipes shown at the beginning of the application
 const Recipe = ({ recipe }) => {
 
   return (

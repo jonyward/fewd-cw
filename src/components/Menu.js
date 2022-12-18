@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import MenuContext from "./MenuContext";
 
+
+//component responsible for rendering the menu component of the application, and filling it with data previously fetched
 export default function Menu() {
   const [order] = useContext(MenuContext);
 
