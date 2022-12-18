@@ -23,7 +23,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #808080;
+  background-color: #F8C8DC;
   
 }
 
@@ -35,7 +35,7 @@ nav li {
 
 nav li a {
   display: block;
-  color: white;
+  color: black;
   display: flex;
   text-align: center;
   justify-content: center;
