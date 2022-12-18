@@ -7,13 +7,13 @@ export default function Menu() {
   return (
     <div>
       <h2>Menu</h2>
-      <ul>
-        {order.map((item, index) => (
-          <li key={index}>
-            {item}
-          </li>
+      <h3>Recipe Summary:</h3>
+        {order.map((name, index) => (
+          <p key={index}>
+            {name}
+          <br></br>
+          </p>
         ))}
-      </ul>
     </div>
   );
 }

@@ -16,8 +16,8 @@ const DisplayRecipe = ({ recipe }) => {
   const [selectedMenuItems, setSelectedMenuItems] = useState([]);
   const [selectedShoppingItems, setSelectedShoppingItems] = useState([]);
 
-  const handleMenuClick = (e, selectedItem) => {
-    let newState = [...selectedMenuItems, selectedItem];
+  const handleMenuClick = (e, selectedName, selectedDescription, selectedCategory, selectedNothing) => {
+    let newState = [...selectedMenuItems, selectedName, selectedDescription, selectedCategory, selectedNothing];
     setSelectedMenuItems(newState);
     console.log(selectedMenuItems);
   };
@@ -28,18 +28,19 @@ const DisplayRecipe = ({ recipe }) => {
     console.log(selectedShoppingItems);
   };
 
-  const { name, description, steps } = currentItem[0];
+  const { name, category, description, steps, nothing} = currentItem[0];
   const ingredients = currentItem[0].ingredients;
 
   return (
     <>
     <div class="container">
     <div class="details">
-      <h2>Recipe Name: {name}</h2><button onClick={(e) => handleMenuClick(e, name)}>Add to Menu</button>
-      <p>{description}</p>
-      <p>{steps}</p>
+      <h2>Recipe Name: {name}</h2><button class="addMenu" onClick={(e) => handleMenuClick(e, name, description, category, nothing)}>Add to Menu</button>
+      <p><u>Recipe Category: </u><br></br>{category}</p>
+      <p><u>Description: </u><br></br>{description}</p>
+      <p><u>Steps: </u><br></br>{steps}</p>
 
-      <p>Recipe Ingredients: </p>
+      <p><u>Recipe Ingredients: </u></p>
       <ul>
         {ingredients.map((ingredients) => (
           <li key={ingredients.id} onClick={(e) => handleShoppingClick(e, ingredients)}>
@@ -47,8 +48,11 @@ const DisplayRecipe = ({ recipe }) => {
           </li>
         ))}
       </ul>
-      <p>Nutritional information</p>
+      <p><u>Nutritional information</u></p>
       <FetchNutrition query={name} />
+      <br>
+      </br>
+      <p><u>Recipe Rating</u></p>
       <StarComponent />
     </div>
       <MenuContext.Provider value={[selectedMenuItems, setSelectedMenuItems]}>

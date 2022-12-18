@@ -8,14 +8,13 @@ export default function ShoppingList() {
   return (
     <div>
       <h2>Shopping List</h2>
-      <p>Please click the desired ingredient on the recipe to add to shopping list.</p>
-      <ul>
+      <h3>Please click the desired ingredient on the recipe to add to shopping list.</h3>
         {order.map((item, index) => (
-          <li key={index}>
+          <p key={index}>
             {item}
-          </li>
+          <br></br>
+          </p>
         ))}
-      </ul>
     </div>
   );
 }

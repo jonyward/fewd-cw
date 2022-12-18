@@ -16,6 +16,7 @@ const Recipe = ({ recipe }) => {
         ))}
       </ul>
       </div>
+      <hr></hr>
       </div>  
       <Outlet />
     </>

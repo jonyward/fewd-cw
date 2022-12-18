@@ -49,9 +49,6 @@ nav li a {
   margin-top: 100px;
   font-family: Arial, Helvetica, sans-serif;
 }
-.recipes {
-  position: absolute;
-}
 
 .submitP {
   text-align: center;
@@ -75,10 +72,16 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  padding-top: 115px;
 }
 
 .specificheader h2 {
-  padding-left: 53px;
+  text-align: center;
+}
+
+.recipes {
+  width: 100%;
+  padding-left: 130px;
 }
 
 .recipeList {
@@ -118,7 +121,6 @@ h1 {
 
 .container {
   text-align: center;
-  padding-top: 75px;
 }
 
 .shopping {
@@ -136,6 +138,14 @@ h1 {
   word-wrap: break-word;
 }
 
+.addMenu {
+  margin: 0;
+}
+
+.details h2 {
+  text-align: center;
+}
+
 .menu {
   display: inline-block;
   width: 20%;
@@ -147,4 +157,8 @@ h1 {
 .details li {
   list-style: none;
   padding-left: 0;
+}
+
+.menuLIST {
+  padding-bottom: 5px;
 }
