@@ -12,7 +12,9 @@ function Search(params) {
   return (
       <div class="recipePage">
           <div class="searchBar">
+            <div class="recipeHeader">
             <h1>Recipes</h1>
+            </div>
             <p class="submitP">Search for all available recipes, including any ingredients used in any of our of our= recipes.</p><br></br>
             <input
               className="form-control"
