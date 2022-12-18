@@ -24,6 +24,7 @@ const StarComponent = () => {
                 </label>
             );
         })}
+        <br></br><br></br>
     </div>
     );
 };

@@ -28,16 +28,16 @@ const DisplayRecipe = ({ recipe }) => {
     console.log(selectedShoppingItems);
   };
 
-  const { name, description } = currentItem[0];
+  const { name, description, steps } = currentItem[0];
   const ingredients = currentItem[0].ingredients;
 
   return (
     <>
+    <div class="container">
     <div class="details">
-      <h4>Recipe Name: {name}</h4>
+      <h2>Recipe Name: {name}</h2><button onClick={(e) => handleMenuClick(e, name)}>Add to Menu</button>
       <p>{description}</p>
-
-      <button onClick={(e) => handleMenuClick(e, name)}>Add to Menu</button>
+      <p>{steps}</p>
 
       <p>Recipe Ingredients: </p>
       <ul>
@@ -52,11 +52,16 @@ const DisplayRecipe = ({ recipe }) => {
       <StarComponent />
     </div>
       <MenuContext.Provider value={[selectedMenuItems, setSelectedMenuItems]}>
+      <div class="menu">
         <Menu />
+      </div>
       </MenuContext.Provider>
       <ShoppingContext.Provider value={[selectedShoppingItems, setSelectedShoppingItems]}>
+      <div class="shopping">
         <ShoppingList />
+      </div>
       </ShoppingContext.Provider>
+    </div>
     </>
   );
 };

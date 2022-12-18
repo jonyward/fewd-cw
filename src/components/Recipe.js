@@ -5,6 +5,8 @@ const Recipe = ({ recipe }) => {
 
   return (
     <>
+    <div class="specificheader">
+    <h2>Available Recipes:</h2>
     <div class="recipes">
       <ul class="recipeList">
         {recipe.map((recipe) => (
@@ -13,6 +15,7 @@ const Recipe = ({ recipe }) => {
           </li>
         ))}
       </ul>
+      </div>
       </div>  
       <Outlet />
     </>
