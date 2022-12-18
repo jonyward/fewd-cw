@@ -13,8 +13,6 @@ recipes for the user to interact with
 
 # Deployed Application:
 
-https://fewd-cw-jonathan-ward.netlify.app/
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

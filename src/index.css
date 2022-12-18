@@ -86,6 +86,7 @@ nav li a {
 .recipeList {
   display: inline;
   width: 100%;
+  padding-left: 330px;
 }
 
 .recipeList  li {
