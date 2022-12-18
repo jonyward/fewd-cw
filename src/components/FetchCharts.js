@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Chart from "chart.js/auto";
+import Chart from "chart.js/auto"; 
 import { Bar } from "react-chartjs-2";
 import { Pie } from "react-chartjs-2";
 
