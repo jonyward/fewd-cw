@@ -9,6 +9,7 @@ import StarComponent from "./StarComponent";
 
 //DisplayRecipe component is responsible for rendering all the main details of each recipe, including the name, description, catagory, 
 // nutritional values and handles information being sent fro recipes into the menu and shopping list
+// Change for deployment
 
 const DisplayRecipe = ({ recipe }) => {
   const { recipeId } = useParams();
