@@ -1,3 +1,16 @@
+# Jonathan Ward Front end web development coursework 1 submittion
+# Student ID : S1902178
+
+To run the application simply enter npm install, and then npm start to run the application on port 3000
+
+This application was built against the spec of front end web dev coursework 1 specifications and can
+hold recipes in local storage, display them with full details, fetch nutritional information from an external API,
+send recipe data to another component temporarily, with one menu component holding recipe information while the other
+shopping list component is capable of holding ingredient data specific to a recipe chosen by the user. 
+
+Recipes can also be filtered by name, ingredient and category all through the search component which is resonsible for filtering out
+recipes for the user to interact with
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
