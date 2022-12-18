@@ -7,6 +7,8 @@ import ShoppingContext from "./ShoppingContext";
 import ShoppingList from "./ShopplingList";
 import StarComponent from "./StarComponent";
 
+//the comments ruined by application lol
+
 const DisplayRecipe = ({ recipe }) => {
   const { recipeId } = useParams();
   const currentItem = recipe.filter((entry) => {
